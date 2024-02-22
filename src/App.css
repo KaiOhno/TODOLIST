@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #303233; /* Darker shade for more depth */
+  color: #e0e0e0; /* Light grey for regular text for better readability */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 2rem; /* Slightly larger for better visibility */
+}
+
+.TodoWrapper {
+  background: #303234; /* Dark grey with a hint of blue for contrast */
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 
+    9px 9px 16px rgba(0, 0, 0, 0.4), /* Dark drop shadow with 40% transparency */
+    -9px -9px 16px rgba(73, 73, 73, 0.4); /* Lighter shadow for a lifted effect */
+}
+
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: radial-gradient(circle, #2E3134, #292B2E);
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem; /* Increased bottom margin */
+  width: 300px;
+  color: #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1pt #272829;
+}
+.todo-input:focus {
+  box-shadow: 0 0 0 1pt #272829, 0 0 0 3pt rgba(0, 0, 0, 0.2); /* Add focus style to maintain outer shadow effect */
+}
+
+
+.todo-input::placeholder {
+  color: #aaaaaa; /* Lighter placeholder text */
+}
+
+.todo-btn {
+  background: radial-gradient(circle, #2E3134, #292B2E); /* Radial gradient fill */
+  color: #fff;
+  margin: 0px 0px 0px 10px;
+  border: none; /* Removing default border */
+  padding: 0.55rem;
+  cursor: pointer;
+  border-radius: 4px; /* Consistency in border-radius */
+  box-shadow: 
+    9px 9px 16px rgba(0, 0, 0, 0.4), /* Dark drop shadow */
+    -9px -9px 16px rgba(73, 73, 73, 0.4), /* Lighter shadow for a lifted effect */
+    0 0 0 1pt #272829; /* Simulated stroke with box-shadow */
+  transition: background 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.todo-btn:hover {
+  background: radial-gradient(circle, #333538, #2c2e31); /* Lighter gradient on hover */
+  box-shadow: 
+    6px 6px 12px rgba(0, 0, 0, 0.4), /* Slightly reduced shadow for hover effect */
+    -6px -6px 12px rgba(73, 73, 73, 0.4), /* Adjusting for hover effect */
+    0 0 0 1pt #272829; /* Maintaining stroke effect */
+}
+
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: radial-gradient(circle, #2E3134, #292B2E); /* Radial gradient fill similar to .todo-input and .todo-btn */
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-shadow: 
+    9px 9px 16px rgba(0, 0, 0, 0.4), /* Dark drop shadow for depth */
+    -9px -9px 16px rgba(73, 73, 73, 0.4), /* Lighter shadow for lifted effect */
+    0 0 0 1pt #272829; /* Simulated stroke with box-shadow for border effect */
+}
+
+
+.fa-trash {
+  color: #e0e0e0; /* Consistent icon color */
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #ffcc00; /* Yellow for attention but not too bright */
+  cursor: pointer;
+}
+
+.completed {
+  color: #66ff00; /* Bright green for clear visibility */
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  color: #e0e0e0; /* Ensure icons match the text color */
+  cursor: pointer;
+}
